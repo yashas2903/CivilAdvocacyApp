@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/detailsConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Details">
+
+  <TextView
+      android:id="@+id/address_details"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:background="#882288"
+      android:paddingTop="6dp"
+      android:paddingBottom="6dp"
+      android:text="TextView"
+      android:textAlignment="center"
+      android:textColor="@color/white"
+      android:textSize="18sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <ImageView
+      android:id="@+id/dodduDp"
+      android:layout_width="271dp"
+      android:layout_height="268dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="16dp"
+      android:layout_marginBottom="16dp"
+      android:contentDescription="Photo"
+      android:scaleType="fitCenter"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/address_details"
+      tools:srcCompat="@tools:sample/avatars" />
+
+  <TextView
+      android:id="@+id/name_details"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="32dp"
+      android:text="TextView"
+      android:textAlignment="center"
+      android:textColor="@color/white"
+      android:textSize="24sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.171"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/address_details" />
+
+  <TextView
+      android:id="@+id/roles_details"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="7dp"
+      android:text="TextView"
+      android:textAlignment="center"
+      android:textColor="@color/white"
+      android:textSize="22sp"
+      app:layout_constraintEnd_toEndOf="@+id/name_details"
+      app:layout_constraintHorizontal_bias="0.333"
+      app:layout_constraintStart_toStartOf="@+id/name_details"
+      app:layout_constraintTop_toBottomOf="@+id/name_details" />
+
+  <ImageView
+      android:id="@+id/partylogo_details"
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:layout_marginTop="84dp"
+      android:contentDescription="Party"
+      android:onClick="onClickPartyIcon"
+      app:layout_constraintStart_toStartOf="@+id/roles_details"
+      app:layout_constraintTop_toBottomOf="@+id/roles_details"
+      tools:srcCompat="@tools:sample/avatars" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
